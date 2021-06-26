@@ -2,6 +2,15 @@
 	width: 100%;
 	max-width: 1920px;
 }
+.wp-block.slides .wp-block.slide {
+	display: none;
+}
+.wp-block.slides .wp-block.slide:first-of-type {
+	display: block;
+}
+.wp-block.slides.has-child-selected .wp-block.slide {
+	display: block;
+}
 .wp-block.slide {
 	width: 100%;
 	max-width: 100%;

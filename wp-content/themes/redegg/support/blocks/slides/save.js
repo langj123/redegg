@@ -2,6 +2,8 @@ const { InnerBlocks, useBlockProps, RichText } = wp.blockEditor;
 
 const SaveSlides = ( { attributes } ) => {
 
+	const { settings } = attributes;
+
 	const blockProps = useBlockProps.save({
 		className: "slides"
 	});
@@ -9,7 +11,10 @@ const SaveSlides = ( { attributes } ) => {
 	return (
 		<div { ...blockProps}>
 			<div className="block-wrapper">
-				<div className="slides-wrap">
+				<div className="slides-wrap"
+					data-autoplay={ settings.autoplay }
+					data-loop={ settings.loop }
+				>
 					<InnerBlocks.Content />
 				</div>
 			</div>

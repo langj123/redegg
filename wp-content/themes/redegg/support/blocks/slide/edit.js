@@ -18,7 +18,6 @@ const EditSlide = ( { attributes, setAttributes, isSelected } ) => {
     const onSelectImage = (media) => {
         let ID = wp.data.select('core/block-editor').getSelectedBlock().clientId;
 
-        console.log(media);
     	let mediaSrc;
         let srcSet;
         if (media.subtype == 'svg+xml') {
