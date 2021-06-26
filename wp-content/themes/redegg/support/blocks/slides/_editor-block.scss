@@ -1,0 +1,32 @@
+.wp-block.slides {
+	width: 100%;
+	max-width: 1920px;
+}
+.wp-block.slide {
+	width: 100%;
+	max-width: 100%;
+}
+.slide-wrap {
+	position: relative;
+	overflow: hidden;
+}
+.slide-wrap .text-wrap {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+.editor-styles-wrapper .slide-title {
+	color: white;
+	text-align: center;
+	font-size: 80px;
+	line-height: 55px;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+.image-controls {
+	margin-bottom: 15px;
+}
