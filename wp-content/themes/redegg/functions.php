@@ -162,8 +162,8 @@ function redegg_enqueue_block_editor_assets() {
 			[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
 			'v1.0.0'
 		);
-		
-		wp_enqueue_style('redegg-editor-css', get_template_directory_uri() . '/blocks.editor.css', ['redegg-fonts']);
+		wp_enqueue_style('redegg-fonts-editor', 'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+		wp_enqueue_style('redegg-editor-css', get_template_directory_uri() . '/blocks.editor.css', ['redegg-fonts-editor']);
 	}
 }
 
