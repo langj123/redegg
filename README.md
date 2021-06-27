@@ -40,6 +40,8 @@ The redegg theme uses npm. Contains an existing package.json file.
    
 ### Slides Block
 
+   ****** Slides Settings  **********
+
    Slides block contains settings for the following:
    1. Autoplay
    2. Loop
