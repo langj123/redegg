@@ -7,7 +7,7 @@ registerBlockType( 'redegg-custom/slide', {
 	apiVersion: 2,
 	title: __( 'Slide', 'redegg-custom' ),
 	icon: 'format-gallery',
-	category: 'layout',
+	category: 'design',
 	parent: ['redegg-custom/slides'],
 	attributes: {
 		appID: {
@@ -36,6 +36,15 @@ registerBlockType( 'redegg-custom/slide', {
 			source: 'text',
 			selector: '.slide-title',
 			default: ''
+		}
+	},
+	example: {
+		attributes: {
+			appID: 10,
+			appURL: redegg.template_directory + '/support/blocks/slide/preview.jpg',
+			imgSet: '',
+			id: '108',
+			title: 'Your Slide Title'
 		}
 	},
 	edit: edit,

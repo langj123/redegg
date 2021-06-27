@@ -18,7 +18,7 @@ registerBlockType( 'redegg-custom/slides', {
 		}
 	},
 	icon: 'format-gallery',
-	category: 'layout',
+	category: 'design',
 	edit: edit,
 	save: save,
 } );
