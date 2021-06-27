@@ -8,7 +8,8 @@
 .wp-block.slides .wp-block.slide:first-of-type {
 	display: block;
 }
-.wp-block.slides.is-selected .wp-block.slide {
+.wp-block.slides.is-selected .wp-block.slide,
+.wp-block.slides.has-child-selected .wp-block.slide {
 	display: block;
 }
 .wp-block.slide {
