@@ -7,7 +7,7 @@ The redegg theme uses npm. Contains an existing package.json file.
 ## Blocks building
 
 
-****** npm related **********
+    ****** npm related **********
 
     To initialize package within redegg/support run:
 
@@ -40,14 +40,13 @@ The redegg theme uses npm. Contains an existing package.json file.
    
 ## Slides Block
 
-
-   ****** Slides Settings  **********
-   
-   Slides block contains settings for the following:
-   1. Autoplay
-   2. Loop
-   3. Show Navigation Arrows
-   4. Show Dot Indicators
+    ****** Slides Settings  **********
+    
+    Slides block contains settings for the following:
+    1. Autoplay
+    2. Loop
+    3. Show Navigation Arrows
+    4. Show Dot Indicators
 
 
 
