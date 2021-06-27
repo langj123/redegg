@@ -47,7 +47,7 @@ The Red Egg Theme uses npm. Contains an existing package.json file.
     3. Show Navigation Arrows
     4. Show Dot Indicators
     
-    Has Slide block as a child, which has uses Media
+    Has Slide block as a child, which uses MediaUpload and RichText components. Utilizes third party scripts from [Slick Slider](https://kenwheeler.github.io/slick/)
     
     
 ![preview image for slides block](https://github.com/langj123/redegg/blob/main/wp-content/themes/redegg/support/blocks/slides/preview.png)

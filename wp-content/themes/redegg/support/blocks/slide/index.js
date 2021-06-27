@@ -12,13 +12,14 @@ registerBlockType( 'redegg-custom/slide', {
 	attributes: {
 		appID: {
 			type: 'number',
+			default: 10
 		},
 		appURL: {
 			type: 'string',
 			source: 'attribute',
 			selector: '.app-media',
 			attribute: 'src',
-			default: ''
+			default: redegg.template_directory + '/support/blocks/slide/preview.jpg'
 		},
 		imgSet: {
 			type: 'string',
@@ -29,7 +30,7 @@ registerBlockType( 'redegg-custom/slide', {
 		},
 		id: {
 			type: 'string',
-			default: ''
+			default: '10'
 		},
 		title : {
 			type: 'string',
