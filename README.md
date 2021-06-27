@@ -1,7 +1,6 @@
-# redegg theme
-RedEgg Slider
+# Red Egg Theme
 
-The redegg theme uses npm. Contains an existing package.json file.
+The Red Egg Theme uses npm. Contains an existing package.json file.
 
 
 ## Blocks building
@@ -38,7 +37,7 @@ The redegg theme uses npm. Contains an existing package.json file.
     Blocks are enqueued in the functions.php file
     
    
-## Slides Block
+### Slides Block
 
     ****** Slides Settings  **********
     
