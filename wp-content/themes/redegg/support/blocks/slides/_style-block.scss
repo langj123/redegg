@@ -41,7 +41,7 @@
 	bottom: 45px;
 	bottom: #{'min(0%, 45px)'};
 	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
-		bottom: 4px;
+		bottom: 45px;
 		bottom: #{'min(3.5%, 45px)'};
 	}
 	@media screen and (min-width: $small-width) {
