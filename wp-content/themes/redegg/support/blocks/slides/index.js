@@ -11,7 +11,9 @@ registerBlockType( 'redegg-custom/slides', {
 			type: 'object',
 			default: {
 				autoplay: false,
-				loop: false
+				loop: false,
+				dots: true,
+				arrows: true,
 			} 			
 		}
 	},

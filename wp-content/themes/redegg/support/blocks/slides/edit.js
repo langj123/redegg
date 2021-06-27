@@ -16,22 +16,42 @@ const EditSlides = ( { attributes, setAttributes, isSelected } ) => {
     });
    
     const setAutoplay = (value) => {
-    	let temp = {};
-    	temp.autoplay = value;
-    	temp.loop = settings.loop;
+    	
+    	let newBody = JSON.parse(JSON.stringify(settings));
+    	newBody.autoplay = value;
     	
     	setAttributes({
-    		settings: temp
+    		settings: newBody
     	});
     }
 
      const setLoop = (value) => {
-    	let temp = {};
-    	temp.loop = value;
-    	temp.autoplay = settings.autoplay;
+
+    	let newBody = JSON.parse(JSON.stringify(settings));
+    	newBody.loop = value;
 
     	setAttributes({
-    		settings: temp
+    		settings: newBody
+    	});
+    }
+
+    const setDots = (value) => {
+
+    	let newBody = JSON.parse(JSON.stringify(settings));
+    	newBody.dots = value;
+
+    	setAttributes({
+    		settings: newBody
+    	});
+    }
+
+    const setArrows = (value) => {
+
+    	let newBody = JSON.parse(JSON.stringify(settings));
+    	newBody.arrows = value;
+
+    	setAttributes({
+    		settings: newBody
     	});
     }
 
@@ -52,6 +72,16 @@ const EditSlides = ( { attributes, setAttributes, isSelected } ) => {
 						label="Loop"
 						onChange={ setLoop }
 					/>
+					<ToggleControl
+						checked={ settings.arrows }
+						label="Show Navigation Arrows"
+						onChange={ setArrows }
+					/>
+					<ToggleControl
+						checked={ settings.dots }
+						label="Show Dot Indicators"
+						onChange={ setDots }
+					/>
 				</PanelBody>
 			</InspectorControls>
 			<div {...blockProps}>
@@ -59,6 +89,8 @@ const EditSlides = ( { attributes, setAttributes, isSelected } ) => {
 					<div className="slides-wrap" 
 						data-autoplay={ settings.autoplay }
 						data-loop={ settings.loop }
+						data-arrows={ settings.arrows }
+						data-dots={ settings.dots }
 					>
 						<InnerBlocks
 							allowedBlocks={['redegg-custom/slide']}

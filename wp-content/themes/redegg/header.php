@@ -8,7 +8,13 @@
  *
  * @package redegg
  */
-
+if (function_exists('get_field')) {
+	$logo = get_field('logo', 'options');
+	$tagline = get_field('tagline', 'options');
+} else {
+	$logo = '';
+	$tagline = '';
+}
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -26,23 +32,20 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'redegg' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		<div class="logo-cont">
+			<?php 
+				if ($logo != '') {
+			?>
+					<img src="<?= $logo; ?>" alt="<?= $tagline; ?>" />
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$redegg_description = get_bloginfo( 'description', 'display' );
-			if ( $redegg_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $redegg_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
+			}
+			?>
+		</div>
+		<?php
+			if ($tagline != '') {
+		?>
+			<p class="tagline"><?= $tagline; ?></p>
+		<?php
+			}
+		?> 
 	</header><!-- #masthead -->

@@ -140,6 +140,7 @@ add_action( 'widgets_init', 'redegg_widgets_init' );
  * Enqueue scripts and styles.
  */
 function redegg_scripts() {
+	wp_enqueue_style('redegg-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
 	wp_enqueue_style( 'redegg-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'redegg-style', 'rtl', 'replace' );
 
@@ -161,7 +162,7 @@ function redegg_enqueue_block_editor_assets() {
 			[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
 			'v1.0.0'
 		);
-		wp_enqueue_style('redegg-fonts', 'https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+		
 		wp_enqueue_style('redegg-editor-css', get_template_directory_uri() . '/blocks.editor.css', ['redegg-fonts']);
 	}
 }
@@ -229,4 +230,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Media
  */
 require get_template_directory() . '/inc/media.php';
+
+
+/**
+ * Options
+ */
+require get_template_directory() . '/inc/options.php';
 

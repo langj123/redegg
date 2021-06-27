@@ -14,6 +14,8 @@ const SaveSlides = ( { attributes } ) => {
 				<div className="slides-wrap"
 					data-autoplay={ settings.autoplay }
 					data-loop={ settings.loop }
+					data-arrows={ settings.arrows }
+					data-dots={ settings.dots }
 				>
 					<InnerBlocks.Content />
 				</div>

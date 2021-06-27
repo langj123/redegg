@@ -1,5 +1,6 @@
 .slide-wrap {
 	position: relative;
+	height: 100vh;
 }
 .slide-wrap .text-wrap {
 	position: absolute;
@@ -12,12 +13,110 @@
 .slide-title {
 	color: white;
 	text-align: center;
-	font-size: 80px;
-	line-height: 55px;
+	font-size: 25px;
+	line-height: 20px;
+	letter-spacing: 1.35px;
 	font-family: 'Poppins', sans-serif;
+	text-shadow: 0px 0px 10px #00000029;
 	text-transform: uppercase;
 	margin: 0;
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		font-size: 35px;
+		line-height: 25px;
+		letter-spacing: 1.8px;
+	}
+	@media screen and (min-width: $small-width) {
+		font-size: 80px;
+		line-height: 55px;
+		letter-spacing: 4px;
+	}
 }
 .image-controls {
 	margin-bottom: 15px;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+.slick-dots {
+	bottom: #{'min(0%, 45px)'};
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		bottom: #{'min(3.5%, 45px)'};
+	}
+	@media screen and (min-width: $small-width) {
+		bottom: #{'min(5%, 45px)'};
+	}
+}
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+	color: transparent;
+}
+.slick-dots li {
+	margin-left: #{'min(1.5%, 12.5px)'};
+	margin-right: #{'min(1.5%, 12.5px)'};
+}
+.slick-dots li button {
+	border-radius: 10px;
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	background: white;
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		width: 15px;
+		height: 15px;
+		border-radius: 15px;
+	}
+	@media screen and (min-width: $small-width) {
+		width: 20px;
+		height: 20px;
+		border-radius: 20px;
+	}
+}
+.slick-dots li.slick-active button {
+	background: var(--egg-red);
+}
+.new-slick-prev:before {
+	display: none;
+}
+.new-slick-prev {
+	left: 10px;
+}
+.new-slick-next:before {
+	display: none;
+}
+.new-slick-next {
+	right: 10px;
+}
+.new-slick-next,
+.new-slick-prev {
+	z-index: 2;
+	font-size: 18px;
+	color: white;
+	width: auto;
+	height: auto;
+	transition-duration: .2s;
+	transition-property: color;
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		font-size: 28px;
+	}
+	@media screen and (min-width: $small-width) {
+		font-size: 36px;
+	}
+}
+.slick-prev.new-slick-prev:hover, 
+.slick-prev.new-slick-prev:focus, 
+.slick-next.new-slick-next:hover, 
+.slick-next.new-slick-next:focus {
+	color: var(--egg-red);
+}
+.slick-prev.slick-disabled.new-slick-prev,
+.slick-next.slick-disabled.new-slick-next {
+	color: transparent;
+}
+.slide-wrap .img-wrap {
+	height: 100%;
+}
+.slide-wrap .img-wrap img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }

@@ -1,0 +1,48 @@
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-left: 2.6%;
+	padding-right: 2.6%;
+	z-index: 9999;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-top: #{'min(5%, 50px)'};
+
+}
+.tagline {
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.185px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: #{'min(2%, 20px)'};
+	text-transform: capitalize;
+	text-shadow: 0px 0px 10px #00000029;
+	font-weight: 600;
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		font-size: 20px;
+		line-height: 45px;
+		letter-spacing: 0.2125px;
+		margin-top: -5px;
+	}
+	@media screen and (min-width: $small-width) {
+		font-size: 25px;
+		line-height: 55px;
+		letter-spacing: 0.25px;
+		margin-top: -6px;
+	}
+}
+.logo-cont img {
+	width: 32px;
+	@media screen and (min-width: $xs-width) and (max-width: $small-width - 1px) {
+		width: 48px;
+	}
+	@media screen and (min-width: $small-width) {
+		width: 68px
+	}
+}
