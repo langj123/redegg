@@ -7,7 +7,7 @@ The redegg theme uses npm. Contains an existing package.json file.
 ## Blocks building
 
 
-    ****** npm related **********
+****** npm related **********
 
     To initialize package within redegg/support run:
 
