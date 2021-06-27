@@ -38,10 +38,11 @@ The redegg theme uses npm. Contains an existing package.json file.
     Blocks are enqueued in the functions.php file
     
    
-### Slides Block
+## Slides Block
+
 
    ****** Slides Settings  **********
-
+   
    Slides block contains settings for the following:
    1. Autoplay
    2. Loop
