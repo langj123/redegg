@@ -46,7 +46,9 @@ The Red Egg Theme uses npm. Contains an existing package.json file.
     2. Loop
     3. Show Navigation Arrows
     4. Show Dot Indicators
-
+    
+    
+![alt text](https://github.com/langj123/redegg/blob/main/wp-content/themes/redegg/support/blocks/slides/preview.png)
 
 
 
